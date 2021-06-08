@@ -4,7 +4,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Author extends Person {
+public class Author extends Person {
     private ArrayList<String> books;
 
     public Author(String firstName, String lastName) {
@@ -29,7 +29,7 @@ class Author extends Person {
     }
 
     @Override
-    public String sortName() {
+    public String fullName() {
         return String.format("%s, %s", lastName, firstName);
     }
 }
